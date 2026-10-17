@@ -20,9 +20,17 @@ def view_students():
         for student in students:
             print("ID:", student["ID"], "| Name:", student["Name"])
 
-print("Student Management System - Develop Version")
+print("Student Management System")
 add_student()
 view_students()
 
-def count_students():
-    print("Total students:", len(students))
+def search_student():
+    student_id = input("Enter student ID to search: ")
+
+    for student in students:
+        if student["ID"] == student_id:
+            print("Student found:", student)
+            return
+
+    print("Student not found.")
+>>>>>>> feature/student-details
