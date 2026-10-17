@@ -23,3 +23,13 @@ def view_students():
 print("Student Management System")
 add_student()
 view_students()
+
+def search_student():
+    student_id = input("Enter student ID to search: ")
+
+    for student in students:
+        if student["ID"] == student_id:
+            print("Student found:", student)
+            return
+
+    print("Student not found.")
