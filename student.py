@@ -23,3 +23,6 @@ def view_students():
 print("Student Management System")
 add_student()
 view_students()
+
+def count_students():
+    print("Total students:", len(students))
