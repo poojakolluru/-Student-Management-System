@@ -20,7 +20,7 @@ def view_students():
         for student in students:
             print("ID:", student["ID"], "| Name:", student["Name"])
 
-print("Student Management System")
+print("Student Management System - Develop Version")
 add_student()
 view_students()
 
